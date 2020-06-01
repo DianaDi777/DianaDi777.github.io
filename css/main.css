@@ -420,7 +420,7 @@ h1 {
 }
 
 code {
-  color: #8187d8;
+  color: #383838;
 }
 
 i.fas.fa-bars {
@@ -2601,6 +2601,16 @@ nav ul .color-show.show3 {
   }
   .BTN-1_1 {
     margin-top: 20px;
+  }
+}
+
+ol.text-left {
+  margin: 0 25%;
+}
+
+@media screen and (max-width: 894px) {
+  ol.text-left {
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
