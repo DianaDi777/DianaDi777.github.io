@@ -73,8 +73,7 @@ h1 {
   transition: transform 0.25s ease-out;
 }
 
-.panel:hover,
-.panel:focus {
+.panel:hover, .panel:focus {
   transform: scale(1.05);
 }
 
@@ -95,8 +94,7 @@ h1 {
   transition: opacity 0.15s ease-in;
 }
 
-.DL-btn:hover,
-.DL-btn:focus {
+.DL-btn:hover, .DL-btn:focus {
   opacity: 0.5;
   transition: opacity 0.15s ease-in;
   background-color: #d1d5ff;
@@ -369,16 +367,6 @@ h1 {
   justify-content: left;
 }
 
-.containerFlex4 {
-  display: flex;
-  flex-wrap: row wrap;
-  justify-content: left;
-}
-
-.containerFlex4 article {
-  flex: 1 100%;
-}
-
 #main-footer {
   background: #a1a9fe;
   color: #ffffff;
@@ -429,6 +417,10 @@ h1 {
   .comp-ex-footer {
     margin-top: 0.5rem;
   }
+}
+
+code {
+  color: #8187d8;
 }
 
 i.fas.fa-bars {
@@ -1635,8 +1627,7 @@ nav ul .color-show.show3 {
   cursor: pointer;
 }
 
-.BTN-1:hover,
-.BTN-1:focus {
+.BTN-1:hover, .BTN-1:focus {
   transform: scale(1.05);
   opacity: 0.8;
   transition: opacity 0.15s ease-out;
@@ -1665,8 +1656,7 @@ nav ul .color-show.show3 {
   cursor: pointer;
 }
 
-.BTN-1_1:hover,
-.BTN-1_1:focus {
+.BTN-1_1:hover, .BTN-1_1:focus {
   transform: scale(1.05);
   opacity: 0.8;
   transition: opacity 0.15s ease-out;
@@ -1697,8 +1687,7 @@ nav ul .color-show.show3 {
   cursor: pointer;
 }
 
-.BTN-1_2:hover,
-.BTN-1_2:focus {
+.BTN-1_2:hover, .BTN-1_2:focus {
   transform: scale(1.05);
   opacity: 0.8;
   transition: opacity 0.15s ease-out;
@@ -1726,8 +1715,7 @@ nav ul .color-show.show3 {
   cursor: pointer;
 }
 
-.BTN-2:hover,
-.BTN-2:focus {
+.BTN-2:hover, .BTN-2:focus {
   transform: scale(1.05);
 }
 
@@ -1753,8 +1741,7 @@ nav ul .color-show.show3 {
   cursor: pointer;
 }
 
-.BTN-2_1:hover,
-.BTN-2_1:focus {
+.BTN-2_1:hover, .BTN-2_1:focus {
   transform: scale(1.05);
 }
 
@@ -1780,8 +1767,7 @@ nav ul .color-show.show3 {
   color: #383838;
 }
 
-.BTN-3:hover,
-.BTN-3:focus {
+.BTN-3:hover, .BTN-3:focus {
   opacity: 0.5;
   transition: opacity 0.15s ease-in;
   background-color: #d1d5ff;
@@ -1806,8 +1792,7 @@ nav ul .color-show.show3 {
   transition: opacity 0.15s ease-in;
 }
 
-.BTN-4:hover,
-.BTN-4:focus {
+.BTN-4:hover, .BTN-4:focus {
   opacity: 0.5;
   transition: opacity 0.15s ease-in;
 }
@@ -1876,8 +1861,7 @@ nav ul .color-show.show3 {
 
 .hero {
   min-height: calc(100vh - 60px);
-  background: url("../images/examples/shopping_cart/store.jpg") center/cover
-    no-repeat;
+  background: url("../images/examples/shopping_cart/store.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1885,8 +1869,7 @@ nav ul .color-show.show3 {
 
 .hero2 {
   min-height: calc(100vh - 60px);
-  background: url("https://via.placeholder.com/1920X1280") center/cover
-    no-repeat;
+  background: url("https://via.placeholder.com/1920X1280") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2169,8 +2152,7 @@ nav ul .color-show.show3 {
   height: 595px;
   background-color: #a9edef;
   position: relative;
-  box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
-    0 -15px 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .productBackground i {
@@ -2201,8 +2183,7 @@ nav ul .color-show.show3 {
   background-color: #ffffff;
   z-index: 1;
   padding: 35px 40px;
-  box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1),
-    0 15px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {

@@ -17,7 +17,7 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     />
-    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="../css/main.min.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Dosis"
       rel="stylesheet"
@@ -28,14 +28,15 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="../script/doc_tabs.js"></script>
+    <!-- <script src="../script/doc_tabs.js"></script> -->
 
-    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=default"></script>
+    <!-- <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=default"></script> -->
   </head>
   <body>
 
       <section class="all-sides-ma-4 doc-titles" >
-        <article style="margin-bottom: 2rem;">
+        <article style="padding-bottom: 2rem!important;" class="containerFlex2">
+         
          
           <div class="MaxW all-sides-pa-4 all-sides-ma-4 b-dotted b-light-gray clearFix">
             <h1>
@@ -69,6 +70,23 @@
               Float elements like image, icons or any other one to the right with class "float-r".
             </p>
           </div>
+        </article>
+        <article   style="margin: 0 auto;" class="b-dotted MaxW b-light-gray all-sides-ma-4 all-sides-pa-1">
+          <pre
+            class="prettyprint"
+            style="border: none !important;"
+          ><code class="">
+  &lt;div class="clearFix"&gt;
+  &lt;h1&gt;Your Tille&lt;/h1&gt;  
+  &lt;img src="../images/image.jpg" width="150"
+  height="150" class="float-l"/&gt;
+  &lt;p&gt;Your paragraph goes here.&lt;/p&gt;
+  &lt;/div&gt;
+              <!-- &lt;/div&gt; 
+            You can discribe your product here and let the picture to floar right or left. -->
+                      </code></pre>
+        </article>
+        <hr style="border-color: #a1a9fe;" class="all-sides-ma-3 Main-blue Sec-blue_bg">
           <div
           class="clearFix MaxW all-sides-pa-4 all-sides-ma-4 b-dotted b-light-gray">
           <h1>
@@ -87,7 +105,7 @@
           </p>
          </div>
 
-          <div class="MaxW all-sides-pa-4 all-sides-ma-4 b-dotted b-light-gray ">
+          <div class="MaxW all-sides-pa-4 all-sides-ma-4 b-dotted b-light-gray">
           <h1>
             without class <span style="text-transform: none;">
               "clearFix"</span>
@@ -104,24 +122,8 @@
             itaque nostrum
           </p>
           </div>
-        </article>
-        <article class="b-dotted b-light-gray all-sides-ma-4 all-sides-pa-1">
-          <pre
-            class="prettyprint"
-            style="border: none !important;"
-          ><code class="ma-8 ">
-
-
-            &lt;div class="clearFix"&gt;
-                &lt;h1&gt;Your Tille&lt;/h1&gt;  
-                &lt;img src="../images/image.jpg" width="150"
-                height="150" class="float-l"/&gt;
-                &lt;p&gt;Your paragraph goes here.&lt;/p&gt;
-              &lt;/div&gt;
-              <!-- &lt;/div&gt; 
-            You can discribe your product here and let the picture to floar right or left. -->
-                      </code></pre>
-        </article>
+       
+        
 
 
       </section>
