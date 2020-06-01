@@ -7,12 +7,17 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <link rel="stylesheet" href="../css/main.min.css" />
+    <style>
+      
+      .borderFix {
+        border: 1px dotted #333 !important;
+      }
+    </style>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     />
+    <link rel="stylesheet" href="../css/main.min.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Dosis"
       rel="stylesheet"
@@ -22,7 +27,225 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=default"></script> -->
+
+    <script src="../script/main.js"></script>
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=default"></script>
   </head>
-  <body></body>
+  <body>
+
+      <section class="all-sides-ma-4 doc-titles" >
+
+        <!-- Uneven Columns -->
+        <article>
+        <h2 class = "centerTextContent all-sides-ma-2">Uneven Columns</h2>
+        <p class = "ma-1">To make uneven columns, add a class "uneven" to the parent element. Then add a class "col-#of12", where # is a number between 1 and 12. The width of the columns will be automatically calculated based on the relative sizes to the other columns.</p>
+        <div class = "uneven">
+          <div class = "col-6of12 centerTextContent">
+              <p> Uneven Column 1 </p>
+          </div>
+          <div class = "col-3of12 centerTextContent">
+              <p>Uneven Column 2</p>
+          </div>
+        </div>  
+        </article>
+
+        <article class="b-dotted b-light-gray all-sides-ma-4 all-sides-pa-1">
+          <pre
+            class="prettyprint"
+            style="border: none !important;">
+          <code class="ma-8">
+            &lt;div class = "uneven"&gt;
+              &lt;div class = "col-6of12"&gt;
+                  &lt;p&gt; Uneven Column 1 &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class = "col-3of12"&gt;
+                  &lt;p&gt; Uneven Column 2 &lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;  
+                      </code></pre>
+        </article>
+
+        <!-- Even Columns -->
+
+        <h2 class = "centerTextContent all-sides-ma-2">Even Columns</h2>
+          <p class = "ma-1">This section shows how to make a grid with even columns</p>
+
+          <p class = "ma-1">Anywhere from a 1-column to a 6-column grid can be made. Add the class "col-#", where # is any number from 1 through 6, to the parent grid element.</p>
+
+        <!-- 6 Column -->
+        <article>
+          <h3 class = "centerTextContent">6 Column</h3>
+          <div class = "col-6 width95p centerGroup centerTextContent">
+            <p> Paragraph</p>
+            <div> Div</div>
+            <span> Span</span>
+            <code> Code</code>
+            <p> Paragraph</p>
+            <div> Div</div>
+            <span> Span</span>
+          </div>
+          </article>
+
+        <article class="b-dotted b-light-gray all-sides-ma-4 all-sides-pa-1">
+          <pre
+          class="prettyprint"
+          style="border: none !important;">
+          <code class="ma-8">
+          &lt;div class = "col-6"&gt;
+            &lt;p&gt; Paragraph&lt;/p&gt;
+            &lt;div&gt; Div&lt;/div&gt;
+            &lt;span&gt; Span&lt;/span&gt;
+            &lt;code&gt; Code&lt;/code&gt;
+            &lt;p&gt; Paragraph&lt;/p&gt;
+            &lt;div&gt; Div&lt;/div&gt;
+            &lt;span&gt; Span&lt;/span&gt;
+          &lt;/div&gt;
+        </code></pre>
+        </article>
+
+        <!-- 2 Column -->
+        <article>
+          <h3 class = "centerTextContent">3 Column</h3>
+          <div class = "col-3 width95p centerGroup centerTextContent">
+            <p> Paragraph</p>
+            <div> Div</div>
+            <span> Span</span>
+            <code> Code</code>
+            <p> Paragraph</p>
+            <div> Div</div>
+            <span> Span</span>
+          </div>
+          </article>
+
+        <article class="b-dotted b-light-gray all-sides-ma-4 all-sides-pa-1">
+          <pre
+          class="prettyprint"
+          style="border: none !important;">
+          <code class="ma-8">
+          &lt;div class = "col-3"&gt;
+            &lt;p&gt; Paragraph&lt;/p&gt;
+            &lt;div&gt; Div&lt;/div&gt;
+            &lt;span&gt; Span&lt;/span&gt;
+            &lt;code&gt; Code&lt;/code&gt;
+            &lt;p&gt; Paragraph&lt;/p&gt;
+            &lt;div&gt; Div&lt;/div&gt;
+            &lt;span&gt; Span&lt;/span&gt;
+          &lt;/div&gt;
+        </code></pre>
+        </article>
+
+        <!-- Embedded Column -->
+        <article>
+          <h2 class = "centerTextContent centerGroup width80p">Grid Even Column Width - Embedded</h2>
+
+          <p class = "ma-1">To make an embedded column, add the class "col-# embed", where # is the number of embedded columns from 1 to 6. The class should be added to a child of the parent grid element. The embedded class is shown below in blue.</p>
+
+          <div class = "col-6 width95p centerGroup centerTextContent">
+            <p> Paragraph</p>
+            <a> Link</a>
+            <span> Span</span>
+            <div class = "col-2-embed ">
+                <code>Code</code>
+                <a>Link</a>
+                <p>Paragraph</p>
+                <span>Span</span>                
+            </div>
+            <p> Paragraph</p>
+            <a> Link</a>
+            <span> Span</span>
+          </div>
+        </article>
+
+        <article class="b-dotted b-light-gray all-sides-ma-4 all-sides-pa-1">
+          <pre
+          class="prettyprint"
+          style="border: none !important;">
+          <code class="ma-8">
+            &lt;div class = "col-6"&gt;
+              &lt;p&gt; Paragraph&lt;/p&gt;
+              &lt;a&gt; Link&lt;/a&gt;
+              &lt;span&gt; Span&lt;/span&gt;
+              &lt;div class = "col-2-embed "&gt;
+                  &lt;code&gt;Code&lt;/code&gt;
+                  &lt;a&gt;Link&lt;/a&gt;
+                  &lt;p&gt;Paragraph&lt;/p&gt;
+                  &lt;span&gt;Span&lt;/span&gt;                
+              &lt;/div&gt;
+              &lt;p&gt; Paragraph&lt;/p&gt;
+              &lt;a&gt; Link&lt;/a&gt;
+              &lt;span&gt; Span&lt;/span&gt;
+            &lt;/div&gt;
+        </code></pre>
+        </article>
+
+        <!-- Example Grid -->
+        <article>
+          <h3 class = "centerTextContent centerGroup width80p">Grid Example: 4x3 grid</h3>
+
+          <p class = "ma-1">One way to make a 4x3 grid is to make the parent grid element the number of colums by using the class "col-#", where # is the number of overall columns desired. In this example "col-4" is used because 4 columns are desired.</p>
+          <p class = "ma-1">To make the number of rows, add an embedded column class of 1 column in each grid child element. This column class will control the number of rows by adding child items to that grid child element. In this example, "col-1" is used in each grid child element. Then the children of that grid child element control how many rows that column will have.</p>
+
+          <div class = "col-4 width80p centerGroup centerTextContent">
+            <div class = "col-1-embed">
+                <h2>Col1</h2>
+                <h2>Row2</h2>
+                <h2>Row3</h2>
+            </div>
+            <div class = "col-1-embed">
+                <h2>Col2</h2>
+                <h2>Row2</h2>
+                <h2>Row3</h2>
+            </div>
+            <div class = "col-1-embed">
+                <h2>Col3</h2>
+                <h2>Row2</h2>
+                <h2>Row3</h2>
+            </div>
+            <div class = "col-1-embed">
+                <h2>Col4</h2>
+                <h2>Row2</h2>
+                <h2>Row3</h2>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="b-dotted b-light-gray all-sides-ma-4 all-sides-pa-1">
+          <pre
+          class="prettyprint"
+          style="border: none !important;">
+          <code class="ma-8">
+            &lt;div class = "col-4"&gt;
+              &lt;div class = "col-1-embed"&gt;
+                  &lt;h2&gt;Col1&lt;/h2&gt;
+                  &lt;h2&gt;Row2&lt;/h2&gt;
+                  &lt;h2&gt;Row3&lt;/h2&gt;
+              &lt;/div&gt;
+              &lt;div class = "col-1-embed"&gt;
+                  &lt;h2&gt;Col2&lt;/h2&gt;
+                  &lt;h2&gt;Row2&lt;/h2&gt;
+                  &lt;h2&gt;Row3&lt;/h2&gt;
+              &lt;/div&gt;
+              &lt;div class = "col-1-embed"&gt;
+                  &lt;h2&gt;Col3&lt;/h2&gt;
+                  &lt;h2&gt;Row2&lt;/h2&gt;
+                  &lt;h2&gt;Row3&lt;/h2&gt;
+              &lt;/div&gt;
+              &lt;div class = "col-1-embed"&gt;
+                  &lt;h2&gt;Col4&lt;/h2&gt;
+                  &lt;h2&gt;Row2&lt;/h2&gt;
+                  &lt;h2&gt;Row3&lt;/h2&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+        </code></pre>
+        </article>
+
+      </section>
+
+      
+    </div>
+    <!--/content -->
+  </body>
 </html>
+

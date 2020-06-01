@@ -7,12 +7,17 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <link rel="stylesheet" href="../css/main.min.css" />
+    <style>
+      
+      .borderFix {
+        border: 1px dotted #333 !important;
+      }
+    </style>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     />
+    <link rel="stylesheet" href="../css/main.min.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Dosis"
       rel="stylesheet"
@@ -22,7 +27,153 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=default"></script> -->
+
+    <script src="../script/main.js"></script>
+
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=default"></script>
   </head>
-  <body></body>
+  <body>
+
+    <section class="all-sides-ma-4 doc-titles" >
+      
+      <h2 class = "centerTextContent all-sides-ma-2">Table Color</h2>
+      <p class = "ma-1">To set the font color of any table row or element, add the "color-#" class, where # is replace with any desired color. The color can be in english or in hexadecimal. This class can be added to any tr, th, or td element.</tr></p>
+
+      <article>
+        <table class = "centerGroup stripes border-outline border-row border-grid responsive-table">
+          <tr>
+              <th class = "color-red">Heading 1</th>
+              <th>Heading 2</th>
+              <th>Heading 3</th>
+          </tr>
+
+          <tr>
+              <td class = "color-blue">Content</td>
+              <td class = "">Content</td>
+              <td class = "color-#fff">Content</td>
+          </tr>
+
+          <tr class = "color-orange">
+              <td>Content</td>
+              <td>Content</td>
+              <td>Content</td>
+          </tr>
+
+          <tr class = "color-white">
+              <td class = "">Content</td>
+              <td class = "">Content</td>
+              <td class = "">Content</td>
+          </tr>
+
+          <tr class = "color-purple">
+              <td class = "color-#069">Content</td>
+              <td class = "">Content</td>
+              <td class = "">Content</td>
+          </tr>
+        </table>
+      </article>
+      
+      <article class="b-dotted b-light-gray all-sides-ma-4 all-sides-pa-1">
+        <pre
+          class="prettyprint"
+          style="border: none !important;">
+            <!-- &lt;&gt; -->
+        <code class="ma-8">
+          &lt;table class = "centerGroup stripes border-outline border-row border-grid responsive-table"&gt;
+            &lt;tr&gt;
+                &lt;th class = "color-red"&gt;Heading 1&lt;/th&gt;
+                &lt;th&gt;Heading 2&lt;/th&gt;
+                &lt;th&gt;Heading 3&lt;/th&gt;
+            &lt;/tr&gt;
+  
+            &lt;tr&gt;
+                &lt;td class = "color-blue"&gt;Content&lt;/td&gt;
+                &lt;td class = ""&gt;Content&lt;/td&gt;
+                &lt;td class = "color-#fff"&gt;Content&lt;/td&gt;
+            &lt;/tr&gt;
+  
+            &lt;tr class = "color-orange"&gt;
+                &lt;td&gt;Content&lt;/td&gt;
+                &lt;td&gt;Content&lt;/td&gt;
+                &lt;td&gt;Content&lt;/td&gt;
+            &lt;/tr&gt;
+  
+            &lt;tr class = "color-white"&gt;
+                &lt;td class = ""&gt;Content&lt;/td&gt;
+                &lt;td class = ""&gt;Content&lt;/td&gt;
+                &lt;td class = ""&gt;Content&lt;/td&gt;
+            &lt;/tr&gt;
+  
+            &lt;tr class = "color-purple"&gt;
+                &lt;td class = "color-#069"&gt;Content&lt;/td&gt;
+                &lt;td class = ""&gt;Content&lt;/td&gt;
+                &lt;td class = ""&gt;Content&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+                    </code></pre>
+      </article>
+
+    <!-- Table Element -->
+    <h2 class = "centerTextContent all-sides-ma-2">Table Starter</h2>
+    <p class = "ma-1">To make a table, add any of the following classes to the table element: </p>
+      <ul>
+        <li>"centerGroup" - centers the table horizontally from the parent (optional)</li>
+        <li>"border-outline" - makes a border around the table (optional)</li> 
+        <li>"border-row" - makes a border around the rows (optional)</li>
+        <li>"border-grid" - makes a border around the individual grid cells (optional) </li>
+        <li>"responsive-table" - makes the table responsive (optional)</li>
+        <li>"stripes" - puts a gray background color on alternating rows (optional) </li>
+      </ul> 
+      
+      <article>
+        <table class = "centerGroup stripes border-outline border-row border-grid responsive-table">
+          <tr>
+              <th class>Heading 1</th>
+              <th>Heading 2</th>
+              <th>Heading 3</th>
+          </tr>
+          <tr>
+            <td class>Content</td>
+            <td class>Content</td>
+            <td class>Content</td>
+          </tr>
+          <tr>
+            <td class>Content</td>
+            <td class>Content</td>
+            <td class>Content</td>
+          </tr>
+        </table>
+      </article>
+  
+      <article class="b-dotted b-light-gray all-sides-ma-4 all-sides-pa-1">
+        <pre
+          class="prettyprint"
+          style="border: none !important;">
+            <!-- &lt;&gt; -->
+        <code class="ma-8">
+          &lt;table class = "centerGroup stripes border-outline border-row border-grid responsive-table"&gt;
+            &lt;tr&gt;
+                &lt;th class&gt;Heading 1&lt;/th&gt;
+                &lt;th&gt;Heading 2&lt;/th&gt;
+                &lt;th&gt;Heading 3&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td class&gt;Content&lt;/td&gt;
+              &lt;td class&gt;Content&lt;/td&gt;
+              &lt;td class&gt;Content&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td class&gt;Content&lt;/td&gt;
+              &lt;td class&gt;Content&lt;/td&gt;
+              &lt;td class&gt;Content&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+                    </code></pre>
+      </article>
+        
+      </section>
+    </div>
+    <!--/content -->
+  </body>
 </html>
+
