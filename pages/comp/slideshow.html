@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Slideshow-Amazing Framework</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../../css/main.css" />
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=default"></script>
+  </head>
+  <body style="background-color: white;">
+    <div class="panel2" id="header2">
+      <!-- NAV-BAR -->
+      <div class="nav-bar" id="menu-buttons">
+        <div class="button">
+          <a href="../../index.html">Home</a>
+        </div>
+
+        <div class="button ">
+          <a href="../doc.html">Documentation</a>
+        </div>
+
+        <div class="button selected">
+          <a href="../components.html">Components</a>
+        </div>
+
+        <div class="button">
+          <a href="../examples.html">Examples</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      <!-- ICON 'BACK' -->
+      <div class="top-bar slideshow-top">
+        <div class="title all-sides-pa-3">
+          <a href="../components.html"
+            ><span class="fa fa-arrow-alt-circle-left fa-2x Main-blue"></span
+          ></a>
+        </div>
+      </div>
+
+      <!-- section #1 TITLE -->
+      <section class="all-sides-pa-4">
+        <h1 class="text-center font-3 Sm-font-2 Med-font-1 fontW-2 ma-RL-1">
+          SLIDESHOW
+        </h1>
+        <h2 class="text-center font-5 Sm-font-4 Med-font-3 lHeight-copy">
+          Full screen slideshow for header
+        </h2>
+      </section>
+      <!-- /section  TITLE -->
+
+      <!-- section #2 DISPLAY -->
+      <div>
+        <a href="../display/display1.html"
+          ><img
+            style="display: block; width: 50%; height: auto; margin: 0 auto;"
+            src="../../images/components/Slde_Amazing.gif"
+        /></a>
+      </div>
+
+      <!-- /section #2 DISPLAY -->
+
+      <!-- section #3 description -->
+      <div class="font-3 all-sides-pa-4 text-center">
+        <h3>FUNCTIONALITY</h3>
+        <p class="text-left">
+          JS will: <br />
+          (a) listen for a user click on arrow-key to go to the next slide.
+          <br />
+          (b) autoplay slides when the page is loaded. It stops the autoplay
+          when a user clicks the arrow-key. It starts autoplay if a user is not
+          clicking arrow-key anymore. <br />
+          (c) create an info bar that will show how many slides there are and
+          which one is currently playing. <br />
+          (d) create a ticker at the top of the slideshow to present how long in
+          the current slide will appear on the screen. <br />
+          CSS will: <br />
+          (a) zoom in on a picture when it appears on the screen <br />
+          (b) provide some animation for a smooth color transition when a user
+          hovers on the arrow button and other transitions. <br />
+         
+          <span class="ital">* This slide show does not display on medium and small screens</span>
+          <p class="text-center Sec-blue">Download our framework filles and link it into your file.</p>
+        </p>
+        <button class="BTN-2 font-3 up all-sides-ma-3">download</button>
+      </div>
+      <!-- /section #3 end-->
+
+      <!-- section #4 CODE-->
+      <article
+        class="displayCode b-dotted b-light-gray all-sides-ma-4 all-sides-pa-2 font-4"
+      >
+        <pre
+          style="white-space: pre-wrap;"
+          class="prettyprint"
+          style="border: none !important;"
+        >
+          <code>
+        <!-- &lt;&gt; use this symbols insted < and > -->
+        // three images
+
+          &lt;div class="fragment all-sides-ma-0"&gt;
+            &lt;div class="slider"&gt;
+              &lt;div class="slider-items"&gt;
+              // first image
+                &lt;div class="Oneitem active"&gt;
+                  &lt;div
+                    class="imgSlide"
+                    style="background-image: url('File.png');"
+                  &gt;&lt;/div&gt;
+                  &lt;div class="captionSlide"&gt;
+                    &lt;div class="textS Main-black"&gt;
+                      &lt;h1&gt;Name of the business&lt;/h1&gt;
+                      &lt;p&gt;Description of the vendor&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                // second image
+                &lt;div class="Oneitem"&gt;
+                  &lt;div
+                    class="imgSlide"
+                    style="background-image: url('File.png');"
+                  &gt;&lt;/div&gt;
+                  &lt;div class="captionSlide"&gt;
+                    &lt;div class="textS"&gt;
+                      &lt;h1&gt;Name of the business&lt;/h1&gt;
+                      &lt;p&gt;Description of the vendor&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                // third image
+                &lt;div class="Oneitem"&gt;
+                  &lt;div
+                    class="imgSlide"
+                    style="background-image: url('File.png');"
+                  &gt;&lt;/div&gt;
+                  &lt;div class="captionSlide all-sides-pa-3"&gt;
+                    &lt;div class="textS"&gt;
+                      &lt;h1&gt;Name of the business&lt;/h1&gt;
+                      &lt;p&gt;Description of the vendor&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+              //Slider controls 
+              &lt;div class="controlsSlide"&gt;
+                &lt;div class="prevS"&gt;&lt;&lt;/div&gt;
+                &lt;div class="nextS"&gt;&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            
+              //Slide info
+              &lt;div class="slide-info"&gt;
+                &lt;div class="meterS"&gt;
+                  &lt;div class="innerS"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="numberS"&gt;&lt;/div&gt;
+              &lt;/div&gt;
+            
+              // Next slide progress meter
+              &lt;div class="progressSlide"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          </code>
+        </pre>
+      </article>
+
+      <!-- /section #4 CODE -->
+    </div>
+    <footer id="main-footer">
+      <div class="footer-content containerFT">
+        <!-- <p>Copyright &copy;</p> -->
+        <div>
+          Contuct us:
+          <a href="mailto:awesome-framework@gmail.com" style="color: white;">
+            <p>awesome-framework@gmail.com</p>
+          </a>
+        </div>
+        <div class="SocialMedia">
+          <a
+            href="https://www.facebook.com/profile.php?id=1644859997"
+            target="_blank"
+            ><i class="fab fa-facebook-f fa-3x"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/diana_di_california/"
+            target="_blank"
+            ><i class="fab fa-instagram-square fa-3x"></i
+          ></a>
+
+          <a href="https://github.com/DianaDi777" target="_blank"
+            ><i class="fab fa-github fa-3x"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

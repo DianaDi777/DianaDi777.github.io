@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+
+    <link rel="stylesheet" href="../../css/main.css" />
+  </head>
+  <body>
+    <div class="containerPI">
+      <div class="cardPI">
+        <!-- article 1 -->
+        <article class="productBackground">
+          <i class="fas fa-home fa-4x logoPI"></i>
+          <a href="#" class="sharePI" alt="share"
+            ><i class="fas fa-share"></i
+          ></a>
+
+          <img
+            src="../../images/components/productInfo/3.jpg"
+            alt="blueProduct"
+            class="productPI showPI"
+            color="main"
+          />
+          <img
+            src="../../images/components/productInfo/5.1.jpg"
+            alt="pinkProduct"
+            class="productPI"
+            color="pink"
+          />
+          <img
+            src="../../images/components/productInfo/5.jpg"
+            alt="yellowProduct"
+            class="productPI"
+            color="yellow"
+          />
+          <img
+            src="../../images/components/productInfo/6.jpg"
+            alt="grayProduct"
+            class="productPI"
+            color="gray"
+          />
+          <img
+            src="../../images/components/productInfo/7.jpg"
+            alt="greenProduct"
+            class="productPI"
+            color="green"
+          />
+        </article>
+        <!-- /article 1 -->
+        <!-- article 2 -->
+        <article class="infoPI">
+          <div class="productName">
+            <div class="divPI">
+              <h1 class="bigPI">TITLE</h1>
+            </div>
+            <br />
+          </div>
+
+          <div class="divPI descriptionPI">
+            <h3 class="etc">Product Info</h3>
+            <br />
+            <p class="textPI">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+              libero? Rerum labore reprehenderit deleniti dolorem minus, et iure
+              aut consequuntur, odio inventore cupiditate, esse optio! Sint quos
+              tenetur quidem ut!
+            </p>
+          </div>
+
+          <div class="divPI color-containerPI">
+            <h3 class="etc">Color</h3>
+            <br />
+            <div class="colorChoicePI">
+              <span class="colorPI activePI" color="main"></span>
+              <span class="colorPI" color="pink"></span>
+              <span class="colorPI" color="yellow"></span>
+              <span class="colorPI" color="gray"></span>
+              <span class="colorPI" color="green"></span>
+            </div>
+          </div>
+
+          <div class="divPI quantityPI">
+            <h3 class="etc">Quantity</h3>
+            <br />
+            <label for="amountPI">How many?</label>
+            <input
+              type="number"
+              id="amountPI"
+              name="amountPI"
+              min="1"
+              max="100"
+            />
+          </div>
+
+          <div class="counterPrice">
+            <a href="#" class="buyPI"
+              ><i class="fas fa-shopping-cart"></i>&nbsp; Add to the Cart!</a
+            >
+            <div class="pricePI">
+              <h2>$</h2>
+              <h2 id="totalPI">0</h2>
+            </div>
+            <button id="pushPI" onclick="teaCost()">Calculate</button>
+          </div>
+        </article>
+        <!-- /article 2 -->
+      </div>
+    </div>
+
+    <script src="../../script/productInfo.js"></script>
+  </body>
+</html>
