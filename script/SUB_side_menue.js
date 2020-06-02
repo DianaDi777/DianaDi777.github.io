@@ -1,6 +1,7 @@
 //btn for mobile screen changes
 $(".btnHAM").click(function () {
   $(this).toggleClass("clickHAM");
+  $(".sidebar").toggleClass("noshowSB");
 });
 
 //typograthy sub menu - arrow toggle; colors change and menue collapses

@@ -318,7 +318,10 @@ h1 {
   #header .nav-bar {
     display: block;
     width: 50%;
-    margin: 0 auto;
+    margin: -5px auto;
+  }
+  .search-bar {
+    margin: 0.5rem;
   }
   #header .picture {
     height: 144px;
@@ -369,7 +372,6 @@ h1 {
 }
 
 #main-footer {
-  background: #a1a9fe;
   color: #ffffff;
   height: 7rem;
 }
@@ -1099,6 +1101,18 @@ i.fas.fa-bars {
   background-color: #fafafa;
 }
 
+.juicy_green_tx {
+  color: #309c32;
+}
+
+.juicy_green_bg {
+  background-color: #309c32;
+}
+
+.beige_bg {
+  background-color: #e7e2dd;
+}
+
 .float-l {
   float: left;
 }
@@ -1292,14 +1306,15 @@ nav ul .color-show.show3 {
 
 .btnHAM {
   position: absolute;
-  top: 27%;
-  left: 7%;
+  top: 230px;
+  left: 10px;
   height: 45px;
   width: 45px;
   text-align: center;
   background-color: #a1a9fe;
   border-radius: 3px;
   cursor: pointer;
+  transition: left 0.4s ease;
 }
 
 .btnHAM span {
@@ -1308,12 +1323,38 @@ nav ul .color-show.show3 {
   line-height: 45px;
 }
 
-.btnHAM.clickHAM {
-  left: 260;
-}
-
 .btnHAM.clickHAM span::before {
   content: "\f00d";
+}
+
+.sidebar.noshowSB {
+  display: block;
+}
+
+@media screen and (min-width: 500px) and (max-width: 770px) {
+  .btnHAM {
+    top: 230px;
+    left: 75px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .btnHAM {
+    top: 230px;
+    left: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .btnHAM {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .sidebar {
+    display: none;
+  }
 }
 
 .typography-quote {

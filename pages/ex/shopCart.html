@@ -11,6 +11,11 @@
     ></script>
     <!-- custom css-->
     <link rel="stylesheet" href="../../css/main.css" />
+    <style>
+      a {
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body style="width: 100%;" class="shopping no-print" class="no-print">
     <!-- add ICON 'BACK' if needed -->
@@ -33,6 +38,39 @@
           alt="store logo"
           height="80"
         />
+        <div class="col-3" style="border: none !important;">
+          <div class="col-1-embed" style="border: none !important;">
+            <a href="#slideHeader"
+              ><h2
+                class="all-sides-pa-2 juicy_green_tx"
+                style="border: none !important;"
+              >
+                Home
+              </h2></a
+            >
+          </div>
+          <div class="col-1-embed" style="border: none !important;">
+            <a href="#slideSC"
+              ><h2
+                class="all-sides-pa-2 juicy_green_tx"
+                style="border: none !important;"
+              >
+                Product
+              </h2></a
+            >
+          </div>
+
+          <div class="col-1-embed" style="border: none !important;">
+            <a href="#contactSC" class="pa-RL-2"
+              ><h2
+                class="all-sides-pa-2 juicy_green_tx"
+                style="border: none !important;"
+              >
+                Contact
+              </h2></a
+            >
+          </div>
+        </div>
         <div class="cart-btn">
           <span class="nav-icon">
             <i class="fas fa-cart-plus baskeT"></i>
@@ -43,10 +81,10 @@
     </nav>
     <!-- end of navbar  -->
     <!-- hero -->
-    <header class="hero">
+    <header class="hero" id="slideHeader">
       <div class="bannerSh">
         <h1 class="banner-title">Smiley veggie</h1>
-        <button class="banner-btn">shop now</button>
+        <button class="banner-btn"><a href="#slideSC">shop now</a></button>
       </div>
       <!--end banner-->
     </header>
@@ -54,11 +92,52 @@
     <!-- products  -->
     <section class="products">
       <div class="section-title">
-        <h2>Our products</h2>
+        <h2 id="slideSC">Our products</h2>
       </div>
       <div class="products-center"></div>
     </section>
     <!-- end of products  -->
+    <!-- contact -->
+    <section class="products beige_bg">
+      <div class="section-title">
+        <h2 id="contactSC">Contact us</h2>
+      </div>
+      <div class="products-center"></div>
+
+      <div>
+        <a href="../display/display3.html"
+          ><img
+            style="
+              display: block;
+              width: 20%;
+              height: auto;
+              margin: 0 auto;
+              border-radius: 15px;
+            "
+            src="../../images/examples/shopping_cart/download.jpg"
+        /></a>
+      </div>
+      <table
+        class="centerGroup stripes border-outline border-row border-grid responsive-table font-3"
+      >
+        <tr class="all-sides-pa-3">
+          <th class>Delivery</th>
+          <th>Collaboration</th>
+          <th>Apply for job</th>
+        </tr>
+        <tr class="white_tx all-sides-pa-3">
+          <td class>delivery_smile@veggie.com</td>
+          <td class>collab_smile@veggie.com</td>
+          <td class>apply@veggie.com</td>
+        </tr>
+        <tr class="all-sides-pa-3">
+          <td class>(619) 522-45-45</td>
+          <td class>(619) 522-33-33</td>
+          <td class>(619) 522-22-22</td>
+        </tr>
+      </table>
+    </section>
+    <!-- contact -->
     <!-- cart  -->
     <div class="cart-overlay">
       <div class="cart">
@@ -82,7 +161,26 @@
     </div>
     <!--end cart-overlay -->
     <!-- end of cart  -->
+    <footer id="main-footer" class="juicy_green_bg">
+      <div class="footer-content containerFT">
+        <!-- <p>Copyright &copy;</p> -->
 
+        <p>Copyright &copy; 2020. Smiley veggie. All Rights Reserved</p>
+        <div class="SocialMedia">
+          <a
+            href="https://www.facebook.com/profile.php?id=1644859997"
+            target="_blank"
+            ><i class="fab fa-facebook-f fa-3x"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/diana_di_california/"
+            target="_blank"
+            ><i class="fab fa-instagram-square fa-3x"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
     <script src="../../script/appExp.js"></script>
   </body>
 </html>
