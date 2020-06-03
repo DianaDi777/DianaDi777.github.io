@@ -15,6 +15,14 @@
       a {
         cursor: pointer;
       }
+
+      @media screen and (max-width: 450px) {
+        .header-links {
+          display: block;
+          margin-top: 2rem;
+          padding-left: 1rem;
+        }
+      }
     </style>
   </head>
   <body style="width: 100%;" class="shopping no-print" class="no-print">
@@ -30,46 +38,18 @@
     <!-- navbar -->
     <nav class="navbarSh">
       <div class="navbarSh-center">
-        <span class="nav-icon">
+        <!-- <span class="nav-icon">
           <i class="fas fa-bars"></i>
-        </span>
+        </span> -->
         <img
           src="../../images/examples/shopping_cart/logoSMILE2.png"
           alt="store logo"
           height="80"
         />
-        <div class="col-3" style="border: none !important;">
-          <div class="col-1-embed" style="border: none !important;">
-            <a href="#slideHeader"
-              ><h2
-                class="all-sides-pa-2 juicy_green_tx"
-                style="border: none !important;"
-              >
-                Home
-              </h2></a
-            >
-          </div>
-          <div class="col-1-embed" style="border: none !important;">
-            <a href="#slideSC"
-              ><h2
-                class="all-sides-pa-2 juicy_green_tx"
-                style="border: none !important;"
-              >
-                Product
-              </h2></a
-            >
-          </div>
-
-          <div class="col-1-embed" style="border: none !important;">
-            <a href="#contactSC" class="pa-RL-2"
-              ><h2
-                class="all-sides-pa-2 juicy_green_tx"
-                style="border: none !important;"
-              >
-                Contact
-              </h2></a
-            >
-          </div>
+        <div class="col-3 header-links" style="border: none !important;">
+            <a href="#slideHeader" class="juicy_green_tx font-3 all-sides-pa-1">Home</a>
+            <a href="#slideSC" class="juicy_green_tx font-3 all-sides-pa-1">Product</a>
+            <a href="#contactSC" class="juicy_green_tx font-3 all-sides-pa-1">Contact</a>          
         </div>
         <div class="cart-btn">
           <span class="nav-icon">
@@ -117,28 +97,29 @@
             src="../../images/examples/shopping_cart/download.jpg"
         /></a>
       </div>
-      <table
-        class="centerGroup stripes border-outline border-row border-grid responsive-table font-3"
-      >
-        <tr class="all-sides-pa-3">
-          <th class>Delivery</th>
-          <th>Collaboration</th>
-          <th>Apply for job</th>
-        </tr>
-        <tr class="white_tx all-sides-pa-3">
-          <td class>delivery_smile@veggie.com</td>
-          <td class>collab_smile@veggie.com</td>
-          <td class>apply@veggie.com</td>
-        </tr>
-        <tr class="all-sides-pa-3">
-          <td class>(619) 522-45-45</td>
-          <td class>(619) 522-33-33</td>
-          <td class>(619) 522-22-22</td>
-        </tr>
-      </table>
+      <div style = "overflow: auto;">
+        <table class="centerGroup stripes border-outline border-row border-grid responsive-table">
+          <tr>
+            <th>Delivery</th>
+            <th>Collaboration</th>
+            <th>Apply for job</th>
+          </tr>
+          <tr class="white_tx">
+            <td class>delivery_smile@veggie.com</td>
+            <td class>collab_smile@veggie.com</td>
+            <td class>apply@veggie.com</td>
+          </tr>
+          <tr>
+            <td class>(619) 522-45-45</td>
+            <td class>(619) 522-33-33</td>
+            <td class>(619) 522-22-22</td>
+          </tr>
+        </table>
+      </div>
     </section>
     <!-- contact -->
     <!-- cart  -->
+    
     <div class="cart-overlay">
       <div class="cart">
         <span class="close-cart">
