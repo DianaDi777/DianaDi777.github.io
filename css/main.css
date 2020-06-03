@@ -371,7 +371,14 @@ h1 {
   justify-content: left;
 }
 
+.gridDoc {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 #main-footer {
+  background: #a1a9fe;
   color: #ffffff;
   height: 7rem;
 }
@@ -2890,6 +2897,14 @@ ol.text-left {
 @media screen and (max-width: 894px) {
   ol.text-left {
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1229px) {
+  .gridDoc {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 /*# sourceMappingURL=main.css.map */

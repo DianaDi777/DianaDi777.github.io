@@ -4,6 +4,12 @@ $(".btnHAM").click(function () {
   $(".sidebar").toggleClass("noshowSB");
 });
 
+//click on sub menu item
+$(".closeTab").click(function () {
+  $(this).toggleClass("clickHAM");
+  $(".sidebar").toggleClass("noshowSB");
+});
+
 //typograthy sub menu - arrow toggle; colors change and menue collapses
 $(".feat-btn").click(function () {
   $("nav ul .feat-show").toggleClass("show");
