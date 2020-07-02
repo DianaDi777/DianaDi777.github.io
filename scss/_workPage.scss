@@ -1,0 +1,119 @@
+.all-pictures {
+  display: grid;
+  grid-gap: 1.5rem;
+  background-color: $white;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  box-shadow: 0 5px 10px 0 rgba($color: #000000, $alpha: 0.9);
+}
+
+.mobile {
+  background: no-repeat center center;
+}
+
+.pic {
+  position: relative; // but everything inside this DIV is going to be positiond absolute
+  //
+  overflow: hidden;
+
+  &::after {
+    //creating overlay for gallary images with 'After' pseudo elements. Applied to every .pic.
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: $main-color;
+    // you can add opacity 0.9 to make overlay slightly transparent
+
+    //animation
+    transform: scale(2) translateX(77%) translateY(77%) rotate(3deg); //apears from bottom right// change for for smoother -50deg effect
+    transition: transform 3s //like ease-in-out;
+      cubic-bezier(0.1, 1, 0.3, 1.1);
+  }
+
+  //activating coloful overlay
+  &:hover::after {
+    transform: scale(2) //scale box-overlay 2 times bigger
+      translateX(0) translateY(0) rotate(-28deg); //makes it visible because value is not negative
+  }
+  //zoom in image when we hover
+  &:hover &Visual {
+    //.pic:hover .picVisual // when we hover pic container make container with image zoom-in
+    transform: scale(1.8); //scale zoom-in effect
+  }
+  // Showing text when we hover
+  &:hover &Name {
+    //.pic:hover .picName // when we hover pic container make a Name container to show the text
+    opacity: 1; //opacity changes when we hover to make it visible
+    transform: translateX(0); //   resting position
+  }
+
+  &Visual {
+    height: auto;
+    display: block; //images inline by default
+    transform: translateZ(0); //images zoom-in in a smooth way
+    transition: transform 750ms //ease-in-out;
+      cubic-bezier(0.1, 1, 0.3, 1); // transition-timing for zoom in effect
+  }
+  &Visual::before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+    overflow: hidden;
+    background-color: $main-color;
+    //when pictires are not dowloaded yet for visiter to view you have a main color background to make it pleasent experience
+
+    // change background-color to  yellow to identufy 'before" ;
+  }
+  &Visual img {
+    position: absolute; //remove to make a 'before' evement visible
+    width: 100%; //makes it responsive
+    height: auto; //makes it responsive
+    line-height: 0;
+    top: 0;
+    left: 0;
+  }
+
+  &Name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0; // makes it invisible by default because we want to fade in
+    text-align: center;
+    z-index: 1; //to be sure text is on top of overlay
+    color: $white;
+    transform: translateX(
+      40%
+    ); // makes it appear horizontaly from the right. Make it negative to appear from the left
+
+    transition: opacity 500ms // similar to ease-in-out
+        cubic-bezier(0.1, 1, 0.3, 1.1),
+      transform 500ms //similar to ease-in-out;
+        cubic-bezier(0, 1, 0.1, 1);
+    transition-delay: 250ms; //makes overlay goes first and when title appear
+  }
+  &-DivAround {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+  } //makes all text inside div centered verticly
+
+  &-Sign {
+    font-size: 2rem;
+    padding: 0 1rem;
+    margin: 5px 0 0 0;
+  }
+
+  &-Type {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: $dark-color;
+    margin: 0;
+  }
+}

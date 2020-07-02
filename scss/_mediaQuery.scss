@@ -1,0 +1,301 @@
+// middle size screens like iPads
+
+@media (max-width: 1210px) {
+  #headerHomePage {
+    height: 100%vh;
+  }
+}
+
+@media (max-width: 1065px) {
+  .refer-me .testimonials {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 960px) {
+  .PortfolioGrid {
+    display: grid;
+    grid-template-areas:
+      "Pimage"
+      "Discr"
+      "Discr";
+
+    .Pimage2 {
+      grid-area: Pimage;
+      max-width: 600px;
+      height: auto;
+      // width: 100%;
+    }
+    .Discr {
+      grid-area: Discr;
+      align-self: center;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  #headerHomePage {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 4rem;
+    }
+  }
+  #main-footer .SocialMedia {
+    display: flex; //makes social icons display better in a middle screen
+  }
+
+  .refer-me .testimonials,
+  #home-areas .work {
+    grid-template-columns: 1fr;
+  }
+  .all-pictures {
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+  #Portfolio {
+    .PortfolioGrid {
+      display: grid;
+      grid-template-areas:
+        "Pimage"
+        "Discr"
+        "Discr";
+      .Pimage {
+        grid-area: Pimage;
+        max-width: none;
+        height: auto;
+      }
+      .Pimage2 {
+        grid-area: Pimage;
+        max-width: 770px;
+        height: auto;
+        align-items: center;
+        width: 100%;
+      }
+      .Discr {
+        grid-area: Discr;
+        align-self: center;
+      }
+      ul.rightish {
+        padding-left: 100px;
+      }
+    }
+  }
+  .right {
+    padding-left: 0;
+  }
+  .rightish {
+    padding-left: 0;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 643px) {
+  #work-section .all-pictures {
+    grid-template-columns: 1fr;
+  }
+
+  .pic {
+    line-height: 1.5;
+    .pic-Sign {
+      font-size: 2rem;
+    }
+
+    .pic-Type {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// small screens like iPhone
+@media (max-width: 500px) {
+  #mainNav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      // padding: 1rem;
+      margin: 1px;
+    }
+  }
+
+  #header {
+    &HomePage {
+      // background: $smallImage;
+      border-bottom: 3px solid $main-color;
+
+      // background: $bgImage no-repeat 10% 10% / cover;
+      background-position: 10% 10%;
+      height: 10rem;
+
+      .header-content {
+        display: none; // 'MY WORK' button and ret of the header is not displaying
+      }
+    }
+
+    &InnerPage {
+      height: 10rem;
+    }
+
+    &InnerPage {
+      height: 10rem;
+      // background: $smallImage no-repeat center center / cover;
+    }
+  }
+  //convert Grid Columns into 1 column layout
+
+  #home-areas .work,
+  #home-awards .prize,
+  .refer-me .testimonials,
+  #contact-email .contact-info,
+  .contact-info div,
+  #work-section .all-pictures {
+    grid-template-columns: 1fr;
+  }
+
+  #contact {
+    &-form {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+
+    &-email {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px #555 solid;
+
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // Home
+  #home {
+    &-areas {
+      .work div {
+        border-bottom: 1px $light-color solid;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-awards {
+      .prize div {
+        padding: 2rem 0 1rem 0;
+      }
+    }
+  }
+
+  // Contact Page
+  #contactMe {
+    &-pic {
+      .ContactGrid {
+        display: none;
+      }
+    }
+  }
+
+  #contact {
+    &-form {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+
+    &-email {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px #555 solid;
+
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+  }
+  #Portfolio {
+    .PortfolioGrid {
+      display: grid;
+      grid-template-areas:
+        "Pimage"
+        "Discr"
+        "Discr";
+      .Pimage {
+        grid-area: Pimage;
+        max-width: none;
+        height: auto;
+      }
+
+      .Discr {
+        grid-area: Discr;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+// max-height - 580px
+@media (max-height: 580px) {
+  #headerHomePage {
+    .header-content {
+      padding-top: 3rem;
+      h1 {
+        font-size: 1rem;
+        line-height: 0.5;
+      }
+    }
+  }
+  #Portfolio {
+    .PortfolioGrid {
+      display: grid;
+      grid-template-areas:
+        "Pimage"
+        "Discr"
+        "Discr";
+      .Pimage,
+      .Pimage2 {
+        grid-area: Pimage;
+        max-width: none;
+        height: auto;
+      }
+
+      .Discr {
+        grid-area: Discr;
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.container {
+  max-width: $websiteWidth;
+  padding: 0 1.5rem;
+  margin: auto; //pushes in a center
+  overflow: hidden; //nothing goes out of container
+}
+
+// Button
+
+.btn {
+  &-Mywork {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border: none;
+    cursor: pointer;
+    color: $dark-color;
+    background-color: $light-color;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $main-color;
+    }
+  }
+}
+
+// Backgrounds
+.bg {
+  &-dark {
+    background: $dark-color;
+    color: ($light-color);
+  }
+  &-light {
+    background: $light-color;
+    color: ($dark-color);
+  }
+  &-middle {
+    background: $middle-color;
+    color: ($dark-color);
+  }
+}
+
+.centerText {
+  text-align: center;
+}
+
+.style {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.style-2 {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+// Padding
+.pad {
+  &OneRem {
+    padding: 1rem 0;
+  }
+  &TwoRem {
+    padding: 2rem 0;
+  }
+  &ThreeRem {
+    padding: 3rem 0;
+  }
+  &FourRem {
+    padding: 4rem 0;
+  }
+}
+
+// Margin
+.margin {
+  &-1 {
+    margin: 1rem 0; // 1rem top  & bottom ; right & left - 0
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.section-title-1 {
+  color: $light-color;
+
+  // padding-top: 20px;
+}
+.lineUnder {
+  height: 3px;
+  width: 5rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+//cursor effect for typewriting
+
+.txt-type {
+  .txt {
+    color: $main-color;
+    border-right: 0.2rem solid $light-color;
+  }
+}

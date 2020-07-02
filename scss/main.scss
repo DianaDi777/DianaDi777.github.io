@@ -1,0 +1,194 @@
+@import "variables";
+
+@import "btnandmore";
+
+@import "homepage";
+
+@import "contactPage";
+
+@import "workPage";
+
+// font-family: 'Baloo 2', cursive;
+
+// mostly using rem // REM -  Relative to font-size of the root element // helps to build scalable layout
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Baloo 2", sans-serif;
+  line-height: 1.5;
+  background: $white;
+}
+#logo {
+  width: 70px;
+  height: 70px;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none; //no bullet points
+  color: $dark-color;
+  // border: 2px solid #333;
+}
+
+h6 {
+  color: $main-color;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase; //makes font Uppercase always
+}
+
+img {
+  width: 100%; //keeps images in its containers
+}
+
+// main navigation
+#mainNav {
+  display: flex;
+  justify-content: space-between; //logo on one side and ul on another side
+  padding-top: 0.7rem; //transparent background for nav-menu items
+
+  font-size: large;
+
+  ul {
+    display: flex;
+    background-color: transparentize($main-color, 0.5);
+    border-radius: 10px;
+  }
+
+  li {
+    // padding: 1rem 1rem;
+    width: 90px;
+
+    margin: 10px 10px 10px 10px;
+    padding: 7px;
+    text-align: center;
+  }
+
+  li a {
+    text-decoration: none;
+    color: $dark-color;
+    text-transform: uppercase;
+    display: block;
+    border-bottom: 3px transparent solid; //allows hover effect without jumping a text
+
+    padding: 5px;
+    transition: border-color 0.5s; //animation: transition color goes smoother
+    background-color: $white;
+    border-radius: 10px;
+
+    &:hover {
+      border-color: $dark-color;
+    }
+
+    &.thispage {
+      border-color: $main-color;
+    }
+    &.thispage:hover {
+      border-color: $light-color;
+    }
+  }
+}
+
+// all headers
+#header {
+  // header Home Page
+  &HomePage {
+    background: $bgImage no-repeat center left / cover;
+    height: 100vh; //takes whole page/screen display/Viewport Height
+    color: $white;
+
+    // Header with java typewriting effect
+    .header-content {
+      text-align: left;
+      padding-top: 20%;
+
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  // Header off Contact and Work Pages
+  &InnerPage {
+    background: $bgImage no-repeat 10% 10% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
+  }
+}
+
+// Work-item 1 and 2: Pages
+#Portfolio {
+  padding: 0;
+  margin: 0;
+  .PortfolioGrid {
+    display: grid;
+    grid-template-areas: "Pimage Discr Discr";
+
+    .Pimage {
+      grid-area: Pimage;
+      max-width: 360px;
+    }
+    .Pimage2 {
+      grid-area: Pimage;
+      width: 600px;
+    }
+    .Discr {
+      grid-area: Discr;
+      border-left: 3px solid $main-color;
+      padding: 0.8rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+//WorkItem 2 Page (UX Flow)
+.right {
+  padding-left: 500px;
+}
+.rightish {
+  padding-left: 50px;
+  font-size: 1.1rem;
+}
+ul.rightish {
+  list-style: square;
+}
+
+// Footer
+#main-footer {
+  background: $dark-color;
+  color: $white;
+  height: 7rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 7rem;
+    align-items: center;
+
+    .SocialMedia .fab {
+      margin-right: 1rem;
+      border: 2px $white solid;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+      text-align: center;
+      padding: 0.5rem;
+      color: $white;
+
+      &:hover {
+        background: $main-color;
+      }
+    }
+  }
+}
+
+@import "mediaQuery"; // import media queries
