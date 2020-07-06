@@ -507,8 +507,24 @@ footer {
     display: grid;
     -ms-grid-columns: 470px 650px;
     grid-template-columns: 470px 650px;
-    -ms-grid-rows: 700px;
-    grid-template-rows: 700px;
+    -ms-grid-rows: 500px;
+    grid-template-rows: 500px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    grid-gap: 100px;
+  }
+  #aboutMe4 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 470px 650px;
+    grid-template-columns: 470px 650px;
+    -ms-grid-rows: 710px;
+    grid-template-rows: 710px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -540,7 +556,7 @@ footer {
     display: grid;
     -ms-grid-columns: 300px 450px;
     grid-template-columns: 300px 450px;
-    -ms-grid-rows: 600px;
+    -ms-grid-rows: 100px;
     grid-template-rows: 600px;
     -webkit-box-align: center;
     -ms-flex-align: center;
