@@ -20,11 +20,11 @@
     ></script>
     <style>
       #sketch {
-        max-width: 750px;
+        max-width: 550px;
         margin: 0 margin;
       }
       #sketch2 {
-        max-width: 750px;
+        max-width: 550px;
         margin: 0 margin;
       }
 
@@ -105,7 +105,7 @@
         font-size: 24px;
         padding: 8px 12px;
         position: absolute;
-        bottom: 20px;
+        bottom: 80px;
         width: 100%;
         text-align: center;
       }
@@ -135,7 +135,31 @@
           opacity: 1;
         }
       }
+      /* video fading */
+      .fade2 {
+        -webkit-animation-name: fade2;
+        -webkit-animation-duration: 7s;
+        animation-name: fade2;
+        animation-duration: 7s;
+      }
 
+      @-webkit-keyframes fade2 {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade2 {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
       /* On smaller screens, decrease text size */
       @media (min-width: 0) and (max-width: 300px) {
         .prev,
@@ -353,7 +377,7 @@
           >
             <iframe
               src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F1644859997%2Fvideos%2F10217582504788185%2F&show_text=0&width=560"
-              class="fromLeft slideIn"
+              class="fade2"
               width="660"
               height="415"
               style="border: none; overflow: hidden;"
@@ -362,6 +386,7 @@
               allowTransparency="true"
               allowfullscreen="true"
             ></iframe>
+            <!-- class="fromLeft slideIn" -->
           </a>
         </div>
         <div>
@@ -369,7 +394,7 @@
             href="https://tikhonovskova.com/Dina/_Amazing_framework/dist/pages/doc.html"
             target="_blank"
           >
-            <p class="fromRight slideIn">
+            <p class="fade2" style="color: #333;">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore,
               ab cumque magni inventore fuga hic praesentium asperiores ad dicta
               adipisci sit sed harum alias in delectus nobis voluptate. Vero
@@ -383,6 +408,7 @@
               assumenda necessitatibus reiciendis veniam excepturi nostrum in
               iste laudantium distinctio obcaecati iure rerum facilis.
             </p>
+            <!-- class="fromRight slideIn" -->
           </a>
         </div>
       </div>
@@ -398,7 +424,7 @@
         <div>
           <a href="https://youtu.be/6NTqhBeeEEo" target="_blank">
             <iframe
-              class="fromLeft slideIn"
+              class="fade2"
               width="660"
               height="415"
               src="https://www.youtube.com/embed/6NTqhBeeEEo"
@@ -406,6 +432,7 @@
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen="true"
             ></iframe>
+            <!-- class="fromLeft slideIn" -->
           </a>
         </div>
         <div>
@@ -413,10 +440,11 @@
             href="https://tikhonovskova.com/Dina/_Amazing_framework/dist/pages/doc.html"
             target="_blank"
           >
-            <p class="fromRight slideIn">
+            <p class="fade2" style="color: #333;">
               Promo video for the San Diego based dancing event which took place
               in August 2019.
             </p>
+            <!-- class="fromRight slideIn" -->
           </a>
         </div>
       </div>
