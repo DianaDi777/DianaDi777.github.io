@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/main.min.css" />
+
+    <script
+      src="https://kit.fontawesome.com/d9a110d49c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #sketch {
+        max-width: 750px;
+        margin: 0 margin;
+      }
+      #sketch2 {
+        max-width: 750px;
+        margin: 0 margin;
+      }
+
+      #sketch img {
+        max-width: 100%;
+        height: auto;
+        border: dotted 2px #333;
+        border-top: none;
+      }
+
+      #sketch2 img {
+        max-width: 100%;
+        height: auto;
+        /* border: dotted 2px #333; */
+      }
+
+      /* SLIDESHOW */
+      .mySlides,
+      .mySlides2 {
+        display: none;
+      }
+
+      .mySlides img,
+      .mySlides2 img {
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      /* Slideshow container */
+      .slideshow {
+        max-width: 750px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next,
+      .next2 {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 13px;
+        margin-top: -22px;
+        color: #333;
+        font-weight: bold;
+        font-size: 36px;
+        transition: 0.6s ease;
+        border-radius: 30%;
+        /* border-radius: 0 3px 3px 0; */
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        /* border-radius: 3px 0 0 3px; */
+        border-radius: 30%;
+      }
+
+      .next2 {
+        right: 0;
+        /* border-radius: 3px 0 0 3px; */
+        border-radius: 30%;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 30%;
+      }
+
+      /* Caption text */
+      .text {
+        color: #333;
+        font-size: 24px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* On smaller screens, decrease text size */
+      @media (min-width: 0) and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px;
+        }
+      }
+      .diskrlogo {
+        margin: 0 auto;
+
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        padding-left: 15rem;
+        padding-right: 15rem;
+      }
+
+      #main-footer {
+        position: relative;
+        left: 0px;
+        top: 200px;
+      }
+      .diskrSK {
+        margin: 0 auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+        position: relative;
+        left: 0px;
+        top: 350px;
+        z-index: 3;
+      }
+      /* .diskrlogo {
+        margin: 0 auto;
+        padding: 2rem;
+        position: relative;
+        left: 0px;
+        top: 550px;
+        z-index: 3;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+      } */
+
+      .diskr_final {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+      }
+
+      .diskr_final2 {
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+        padding-left: 8rem;
+        padding-right: 8rem;
+      }
+      .sec2 {
+        position: relative;
+        left: 0px;
+        top: 50px;
+      }
+      .sec3 {
+        position: relative;
+        left: 0px;
+        top: 850px;
+      }
+      .controller {
+        background-color: #333;
+        position: relative;
+        /* top: 600px; */
+        max-width: 742px;
+        width: 100%;
+        border-right: solid 4px #333;
+        border-left: solid 4px #333;
+        display: flex;
+        justify-content: center;
+      }
+
+      button {
+        font-size: 30px;
+        color: #fff;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+      }
+
+      @media screen and (min-width: 674px) {
+        .controls1 {
+          border: none;
+        }
+      }
+      .controls1 {
+        background-color: #333;
+        position: relative;
+        max-width: 658px;
+        width: 100%;
+        border-right: solid 4px #333;
+        border-left: solid 4px #333;
+      }
+
+      .fromLeft {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+      }
+      .fromRight {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+      }
+      .fromLeft,
+      .fromRight {
+        -webkit-transition: -webkit-transform 400ms ease-in;
+        transition: -webkit-transform 400ms ease-in;
+        transition: transform 400ms ease-in;
+        transition: transform 400ms ease-in, -webkit-transform 400ms ease-in;
+      }
+      .fromLeft.appear,
+      .fromRight.appear {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+      }
+      .show-on-scroll {
+        opacity: 0;
+        -webkit-transition: opacity 0.4s ease-in;
+        transition: opacity 0.4s ease-in;
+      }
+      .show-on-scroll.appear {
+        opacity: 1;
+      }
+      @media screen and (min-width: 870px) {
+        #mockupGrid {
+          padding-top: 0;
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-columns: 500px 500px;
+          grid-template-columns: 500px 500px;
+          -ms-grid-rows: 450px;
+          grid-template-rows: 450px;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          grid-gap: 15rem;
+        }
+      }
+      #mockupGrid {
+        padding-top: 5em;
+      }
+
+      #mockupGrid img {
+        width: 100%;
+        height: auto;
+      }
+      /* #mockupGrid iframe {
+        /* width: 100%; */
+      /* height: auto; */
+      /* max-width: 100%; 
+      } */
+
+      .picWidth {
+        width: 30%;
+        height: auto;
+      }
+    </style>
+
+    <title>Dina T. | UI/UX Designer & Web Developer</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="headerInnerPage">
+      <div class="container">
+        <nav id="mainNav">
+          <a href="../../index.html"
+            ><img src="../images/Logo_Pink.png" alt="logo" id="logo"
+          /></a>
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+
+            <li><a href="work.html" class="thispage">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section
+      class="refer-me centerText"
+      style="border-bottom: solid 2px #d48cf8;"
+    >
+      <div class="bg-dark">
+        <h2 class="section-title-1 padOneRem">Social media graphics</h2>
+        <div class="lineUnder"></div>
+        <p class="style-2 centerText section-title-1">
+          Created with Adobe Photoshop, Illustartor, InDesign
+        </p>
+      </div>
+    </section>
+    <!-- MAIN CONTENT -->
+    <section>
+      <div id="sketch" style="padding: 1rem; margin: 0 auto;">
+        <h1 style="text-align: center; padding: 1rem;">
+          <!-- <span style="text-transform:uppercase;">  -->
+          Facebook Video
+        </h1>
+      </div>
+      <div id="mockupGrid">
+        <div>
+          <a
+            href="https://www.facebook.com/1644859997/videos/10217582504788185/"
+            target="_blank"
+          >
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F1644859997%2Fvideos%2F10217582504788185%2F&show_text=0&width=560"
+              class="fromLeft slideIn"
+              width="660"
+              height="415"
+              style="border: none; overflow: hidden;"
+              scrolling="no"
+              frameborder="0"
+              allowTransparency="true"
+              allowfullscreen="true"
+            ></iframe>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://tikhonovskova.com/Dina/_Amazing_framework/dist/pages/doc.html"
+            target="_blank"
+          >
+            <p class="fromRight slideIn">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore,
+              ab cumque magni inventore fuga hic praesentium asperiores ad dicta
+              adipisci sit sed harum alias in delectus nobis voluptate. Vero
+              laboriosam odit tempora accusantium sunt illum soluta veniam
+              aperiam minima, consectetur at cumque nesciunt rem, facere labore
+              possimus eius cupiditate voluptate voluptatibus modi blanditiis
+              esse officia pariatur! Odio tempora et sint cupiditate minima quod
+              commodi ipsum dolor voluptatum eligendi! Aliquid maxime reiciendis
+              explicabo corporis soluta praesentium dolor cupiditate assumenda
+              ducimus? Labore maxime consequuntur, a architecto veritatis nemo,
+              assumenda necessitatibus reiciendis veniam excepturi nostrum in
+              iste laudantium distinctio obcaecati iure rerum facilis.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- section 2 -->
+    <section>
+      <div id="sketch" style="padding: 1rem; margin: 0 auto;">
+        <h1 style="text-align: center; padding: 1rem;">
+          San Diego Tango Marathon Promo Video
+        </h1>
+      </div>
+      <div id="mockupGrid">
+        <div>
+            <iframe width="660" height="415" src="http://youtube.com/embed/6NTqhBeeEEo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://tikhonovskova.com/Dina/_Amazing_framework/dist/pages/doc.html"
+            target="_blank"
+          >
+            <p class="fromRight slideIn">
+              Promo video for the San Diego based dancing event which took place
+              in August 2019.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- slideshow -->
+    <section class="sec2">
+      <div class="slideshow">
+        <div class="mySlides fade">
+          <img
+            src="../images/tango/tangoPNGArtboard-4-copy.png"
+            alt="social media graphics"
+          />
+          <div class="text">Festival Flow Kit</div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="../images/tango/tango1Artboard-4-750.jpg"
+            alt="social media graphics"
+          />
+          <div class="text">Festival Flow Kit</div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="../images/tango/tango1Artboard-4-100.jpg"
+            alt="logo design"
+          />
+          <div class="text">Festival Flow Kit</div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="../images/tango/tango2Artboard-4-100.jpg"
+            alt="logo design"
+          />
+          <div class="text">Festival Flow Kit</div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="../images/tango/tango4Artboard-4-100.jpg"
+            alt="logo design"
+          />
+          <div class="text">Festival Flow Kit</div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="../images/tango/tango3Artboard-4-100.jpg"
+            alt="logo design"
+          />
+          <div class="text">Festival Flow Kit</div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="../images/tango/tango5Artboard-4-100.jpg"
+            alt="logo design"
+          />
+          <div class="text">Festival Flow Kit</div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="../images/tango/tango6Artboard-4-100.jpg"
+            alt="logo design"
+          />
+          <div class="text">Festival Flow Kit</div>
+        </div>
+        <div class="mySlides fade">
+          <img
+            src="../images/tango/tangoPNGArtboard-4-copy-3.png"
+            alt="logo design"
+          />
+          <div class="text">Festival Flow Kit</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <!-- </div> -->
+
+      <div class="diskrlogo">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, ab
+          cumque magni inventore fuga hic praesentium asperiores ad dicta
+          adipisci sit sed harum alias in delectus nobis voluptate. Vero
+          laboriosam odit tempora accusantium sunt illum soluta veniam aperiam
+          minima, consectetur at cumque nesciunt rem, facere labore possimus
+          eius cupiditate voluptate voluptatibus modi blanditiis esse officia
+          pariatur! Odio tempora et sint cupiditate minima quod commodi ipsum
+          dolor voluptatum eligendi! Aliquid maxime reiciendis explicabo
+          corporis soluta praesentium dolor cupiditate assumenda ducimus? Labore
+          maxime consequuntur, a architecto veritatis nemo, assumenda
+          necessitatibus reiciendis veniam excepturi nostrum in iste laudantium
+          distinctio obcaecati iure rerum facilis.
+        </p>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy; 2020. Diana_Di. All Rights Reserved</p>
+        <div class="SocialMedia">
+          <a
+            href="https://www.facebook.com/profile.php?id=1644859997"
+            target="_blank"
+            ><i class="fab fa-facebook-f fa-3x"></i>
+          </a>
+          <a href="https://github.com/DianaDi777" target="_blank"
+            ><i class="fab fa-github fa-3x"></i
+          ></a>
+
+          <a href="https://www.linkedin.com/in/dinatg" target="_blank"
+            ><i class="fab fa-linkedin-in fa-3x"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../script/show-on-scroll.js"></script>
+    <script>
+      // SLIDESHOW 1
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var slides = document.getElementsByClassName("mySlides");
+
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
