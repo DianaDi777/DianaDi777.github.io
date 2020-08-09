@@ -301,7 +301,7 @@
   height: 100%;
   display: block;
   background: #d48cf8;
-  transform: scale(2) translateX(77%) translateY(77%) rotate(3deg);
+  transform: scale(2) translateX(77%) translateY(77%) rotate(-50deg);
   transition: transform 3s cubic-bezier(0.1, 1, 0.3, 1.1);
 }
 
@@ -375,6 +375,15 @@
   font-size: 1.2rem;
   color: #333;
   margin: 0;
+}
+
+@media (max-width: 643px) {
+  .pic::after {
+    display: none;
+  }
+  .pic:hover .picName .pic-DivAround {
+    background-color: #d48cf8;
+  }
 }
 
 * {
@@ -693,7 +702,7 @@ ul.rightish {
   }
   #home-areas .work div:last-child {
     border: none;
-    padding-bottom: 0;
+    padding-bottom: 15px;
   }
   #home-awards .prize div {
     padding: 2rem 0 1rem 0;

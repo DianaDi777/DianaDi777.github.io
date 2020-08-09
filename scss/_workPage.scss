@@ -29,7 +29,7 @@
     // you can add opacity 0.9 to make overlay slightly transparent
 
     //animation
-    transform: scale(2) translateX(77%) translateY(77%) rotate(3deg); //apears from bottom right// change for for smoother -50deg effect
+    transform: scale(2) translateX(77%) translateY(77%) rotate(-50deg); //apears from bottom right// change for for smoother -50deg effect. 3deg - stronger.
     transition: transform 3s //like ease-in-out;
       cubic-bezier(0.1, 1, 0.3, 1.1);
   }
@@ -49,6 +49,7 @@
     //.pic:hover .picName // when we hover pic container make a Name container to show the text
     opacity: 1; //opacity changes when we hover to make it visible
     transform: translateX(0); //   resting position
+    // background-color: $main-color;
   }
 
   &Visual {
@@ -115,5 +116,18 @@
     font-size: 1.2rem;
     color: $dark-color;
     margin: 0;
+  }
+}
+
+@media (max-width: 643px) {
+  .pic {
+    &::after {
+      display: none;
+    }
+    &:hover &Name {
+      .pic-DivAround {
+        background-color: $main-color;
+      }
+    }
   }
 }
