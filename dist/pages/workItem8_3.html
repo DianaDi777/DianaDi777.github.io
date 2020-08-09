@@ -280,24 +280,26 @@
       .show-on-scroll.appear {
         opacity: 1;
       }
-      .video {
-        position: relative;
-        padding-bottom: 56.25%;
 
-        /* background-color: red; */
-      }
-
-      .video iframe {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-      }
       p.fade2 {
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
       } /* .somespace */
-      @media screen and (min-width: 870px) {
+
+      @media screen and (max-width: 1321px) {
+        .video {
+          position: relative;
+          padding-bottom: 56.25%;
+        }
+
+        .video iframe {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      @media screen and (min-width: 1321px) {
         #mockupGrid {
           padding-top: 0;
           display: -ms-grid;
@@ -343,7 +345,7 @@
       @media (max-width: 847px) {
         .text {
           padding: 10px 10px;
-          bottom: 20px;
+          bottom: 5px;
         }
       }
     </style>
