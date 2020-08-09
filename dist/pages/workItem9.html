@@ -46,11 +46,11 @@
         position: absolute;
         top: 50%;
         width: auto;
-        padding: 16px;
+        padding: 0;
         margin-top: -22px;
         color: #333;
         font-weight: bold;
-        font-size: 36px;
+        font-size: 20px;
         transition: 0.6s ease;
         border-radius: 30%;
         /* border-radius: 0 3px 3px 0; */
@@ -121,14 +121,92 @@
         .text {
           font-size: 11px;
         }
-      }
-      .diskrlogo {
-        margin: 0 auto;
 
-        padding-top: 0rem;
-        padding-bottom: 0rem;
-        padding-left: 15rem;
-        padding-right: 15rem;
+        .diskrlogo {
+          margin: 0 auto;
+
+          padding-top: 0rem;
+          padding-bottom: 0rem;
+          padding-left: 15rem;
+          padding-right: 15rem;
+        }
+      }
+      @media (max-width: 500px) {
+        .text {
+          padding: 0;
+        }
+        .diskrSK {
+          margin: 0 auto;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          position: relative;
+          left: 0px;
+          top: 280px;
+          z-index: 3;
+        }
+        .diskrlogo {
+          margin: 0 auto;
+
+          position: relative;
+          left: 0px;
+          top: 20px;
+          z-index: 4;
+          padding: 1rem;
+        }
+
+        .diskr_final {
+          padding: 1rem;
+        }
+        .sec2 {
+          top: 240px;
+        }
+        .sec3 {
+          top: 510px;
+        }
+        #mockupGrid {
+          padding-top: 0;
+        }
+        #main-footer {
+          top: 550px;
+        }
+        .diskr_final2 {
+          padding: 1rem;
+        }
+        .slideshow {
+          margin: 10px;
+        }
+        .style-2 {
+          padding-right: 20px;
+          padding-left: 20px;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        .diskrSK,
+        .diskrlogo,
+        .diskr_final,
+        .diskr_final2 {
+          padding: 2rem;
+        }
+        #mockupGrid {
+          padding-top: 1rem;
+        }
+        .diskrlogo,
+        .diskrSK {
+          padding-top: 0;
+        }
+      }
+
+      @media (max-width: 670px) {
+        .slideshow {
+          margin: 20px;
+        }
+        .diskrlogo {
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
       }
     </style>
 
@@ -167,16 +245,14 @@
 
     <!-- FFK -->
     <section>
-      <!-- <div
-        id="sketch"
-        style="padding-right: 1rem; padding-left: 1rem; margin: 0 auto;"
-      >
-       <h1 style="text-align: center;">
-    
-          Festival Flow Kit. Social Media material
-        </h1> 
-      </div> -->
       <div class="slideshow">
+        <div class="mySlides fade">
+          <img
+            src="../images/FFK/FFK_all_squareArtboard-1.png"
+            alt="logo design"
+          />
+          <div class="text">Festival Flow Kit</div>
+        </div>
         <div class="mySlides fade">
           <img
             src="../images/FFK/FFk1Artboard-1-copy-100.jpg"
@@ -248,6 +324,14 @@
       <div class="slideshow">
         <div class="mySlides2 fade">
           <img
+            src="../images/Kiwi/kiwi_all_squareArtboard-1.png"
+            alt="logo design"
+          />
+          <div class="text">Facial Spa Instagram Field</div>
+        </div>
+
+        <div class="mySlides2 fade">
+          <img
             src="../images/Kiwi/KIWI_fitArtboard-1-copy-3-100.jpg"
             alt="logo design"
           />
@@ -285,13 +369,6 @@
         <div class="mySlides2 fade">
           <img
             src="../images/Kiwi/KIWI_fitArtboard-1-copy-2-100.jpg"
-            alt="logo design"
-          />
-          <div class="text">Facial Spa Instagram Field</div>
-        </div>
-        <div class="mySlides2 fade">
-          <img
-            src="../images/Kiwi/kiwi_all_squareArtboard-1.png"
             alt="logo design"
           />
           <div class="text">Facial Spa Instagram Field</div>
