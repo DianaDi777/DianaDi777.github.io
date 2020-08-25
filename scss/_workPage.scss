@@ -125,9 +125,10 @@
       display: none;
     }
     &:hover &Name {
-      .pic-DivAround {
-        background-color: $main-color;
-      }
+      display: none;
+      // .pic-DivAround {
+      //   background-color: $main-color;
+      // }
     }
   }
 }

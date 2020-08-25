@@ -381,8 +381,8 @@
   .pic::after {
     display: none;
   }
-  .pic:hover .picName .pic-DivAround {
-    background-color: #d48cf8;
+  .pic:hover .picName {
+    display: none;
   }
 }
 
