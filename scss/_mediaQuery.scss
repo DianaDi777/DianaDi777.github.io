@@ -91,6 +91,11 @@
 }
 
 @media (max-width: 643px) {
+  .width {
+    width: 100%;
+    height: 100%;
+  }
+
   #work-section .all-pictures {
     grid-template-columns: 1fr;
   }
