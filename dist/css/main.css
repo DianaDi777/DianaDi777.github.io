@@ -478,7 +478,7 @@ img {
 }
 
 #headerHomePage {
-  background: url("../images/b&w-yacht2.jpg") no-repeat center left/cover;
+  background: url("../images/main_2021_1.jpg") no-repeat center left/cover;
   height: 100vh;
   color: #fff;
 }
@@ -494,7 +494,7 @@ img {
 }
 
 #headerInnerPage {
-  background: url("../images/b&w-yacht2.jpg") no-repeat 10% 10%/cover;
+  background: url("../images/main_2021_1.jpg") no-repeat 10% 10%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #d48cf8;
 }
