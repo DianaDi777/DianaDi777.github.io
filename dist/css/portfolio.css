@@ -39,6 +39,11 @@
   height: auto;
 }
 
+.picWidth_small {
+  width: 10%;
+  height: auto;
+}
+
 @media screen and (min-width: 870px) {
   #mockupGrid {
     padding-top: 0;
